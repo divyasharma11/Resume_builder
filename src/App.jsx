@@ -275,7 +275,7 @@ function App() {
     <div className='main_container'>
       <div className='left_container'>
         <div className='resume_main_container'>
-        <h1>Resume</h1>
+        <h1 className="heading"><span style={{color:'rgb(254, 125, 139)'}}>R</span>esume</h1>
           <div className='resume_container'>
             <div className='resume_content'>
               <div className='resume_score'>{`${progress}%`}</div>

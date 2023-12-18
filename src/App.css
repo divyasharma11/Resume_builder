@@ -11,6 +11,11 @@
   margin-left: 70px;
   overflow-y: scroll;
 }
+.heading{
+  text-align: center;
+  /* color: rgb(254, 125, 139); */
+  color: seagreen;
+}
 .resume_main_container{
     display: block;
     user-select: none;
@@ -252,8 +257,6 @@ color: rgb(160, 157, 157);
 .Professional_summary{
   width: 90%;
   height: 200px;
-  /* padding: 0px ; */
-  /* text-align: start; */
   background-color: rgb(239, 242, 249);
   border-radius: 5px;
 }

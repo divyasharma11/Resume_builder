@@ -17,6 +17,7 @@
   color: seagreen;
 }
 .resume_main_container{
+    width: 100%;
     display: block;
     user-select: none;
     padding-bottom: 16px;
@@ -411,16 +412,21 @@ h3{
 @media only screen and (max-width: 768px) {
   .main_container {
     display: flex;
-    /* flex-direction: column; */
+    flex-direction: column;
   }
   .left_container {
-    padding: 10px 20px;
-    margin-right: 0;
+    width: 100%;
+    padding: 0px 0px;
+    margin-left: 10px;
+    margin-right: 5px;
+    overflow-y:visible;
   }
   .resume_main_container{
+    width: 100%;
     display: flex;
     flex-direction: column;
   }
+  
   .left_container h1{
     text-align: center;
     color: skyblue;
@@ -429,7 +435,7 @@ h3{
   display: none;
 }
 .progress_bar{
-  width: 90%;
+  width: 100%;
 }
 .horse_tag{
   display: none;
@@ -458,7 +464,7 @@ input {
   padding-right:1rem ;
 }
 .img_container{
-  width: 60%;
+  width: 55%;
   height: 50px;
   right: 50px;
   bottom: 10px;
@@ -478,7 +484,7 @@ input {
 /* right */
 .right_container{
   width: 100%;
-  position: relative;
+  /* position: absolute; */
 }
 .display_container{
   display: flex;

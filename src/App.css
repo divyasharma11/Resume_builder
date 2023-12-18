@@ -420,7 +420,7 @@ h3{
   height:fit-content;
   display: flex;
   flex-direction: column;
-  margin:5px 5px;
+  margin-left:5px;
   }
   .left_container {
     width: 100%;
@@ -459,7 +459,7 @@ h3{
   display: none;
 }
 input {
-  width: 80%;
+  width: 90%;
   padding:20px 40px;
   margin-top: 10px;
   margin-bottom: 15px;
@@ -482,7 +482,7 @@ input {
 
 .img_container .input_img{
    width: 40%;
-   left: 55px;
+   left: 65px;
 }
 .gap p{
   font-size: 15px;

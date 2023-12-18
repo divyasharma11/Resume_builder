@@ -497,6 +497,7 @@ input {
   /* position: absolute; */
 }
 .display_container{
+  width: 300px;
   display: flex;
   padding: 40px 0px;
 }

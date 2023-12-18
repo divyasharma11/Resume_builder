@@ -459,8 +459,8 @@ h3{
   display: none;
 }
 input {
-  width: 90%;
-  padding:20px 40px;
+  width: 100%;
+  padding:20px 50px;
   margin-top: 10px;
   margin-bottom: 15px;
 }
@@ -482,7 +482,7 @@ input {
 
 .img_container .input_img{
    width: 40%;
-   left: 65px;
+   left: 75px;
 }
 .gap p{
   font-size: 15px;
@@ -502,7 +502,7 @@ input {
   width: 300px;
   height: fit-content;
   display: flex;
-  padding: 30px 0px;
+  padding: 30px 10px;
 }
 .display1{
   width: 120px;

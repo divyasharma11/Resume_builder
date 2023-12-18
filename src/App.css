@@ -473,7 +473,7 @@ input {
   padding-right:1rem ;
 }
 .img_container{
-  width: 55%;
+  width: 60%;
   height: 50px;
   right: 50px;
   bottom: 10px;
@@ -490,6 +490,7 @@ input {
 .skill_btn{
   padding: 5px;
 }
+
 /* right */
 .right_container{
   width: 100%;

@@ -502,7 +502,8 @@ input {
   width: 300px;
   height: fit-content;
   display: flex;
-  padding: 30px 10px;
+  padding-top: 30px;
+  padding-left: 20px;
 }
 .display1{
   width: 120px;

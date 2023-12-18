@@ -307,18 +307,15 @@ h3{
 }
 .display1{
   width: 200px;
-  height: 130vh;
+  height: 150vh;
   background-color: rgb(6, 99, 68);
   color: #fff;
   padding: 20px;
 }
 .display2{
   width: 300px;
-  height: 130vh;
+  height: 150vh;
   background-color: #fff;
-  border-right:1px solid grey ;
-  border-top:1px solid grey ;
-  border-bottom:1px solid grey ;
   color: black;
   padding: 20px;
 }
@@ -381,37 +378,7 @@ h3{
   color: rgb(130, 139, 162);
 }
 
-/* @media only screen and (max-width: 1024px) {
-  .main_container{
-    width: 100%;
-    height: fit-content;
-    display: flex;
-    flex-direction: column;
-  }
-  .left_container {
-    width: 100%;
-    margin-left: 0;
-    
-  }
-  .left_container h1{
-    text-align: center;
-    color: rgb(36, 37, 39);
-  }
-  .resume_main_container{
-    display: flex;
-   
-  }
-  .right_container {
-    width: 100%;
-    overflow-y:visible;
-  }
 
-  .display_container {
-    padding: 20px;
-    width: 100%;
-    display: none;
-  }
-} */
 
 /* Responsive styles for mobile devices */
 @media only screen and (max-width: 768px) {

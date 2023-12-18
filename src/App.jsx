@@ -213,7 +213,7 @@ function App() {
       reader.readAsDataURL(file);
     }
   };
- 
+  
   const downloadPDF = () => {
     const element = document.getElementById('cv-container');
     html2pdf(element, {

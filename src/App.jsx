@@ -5,12 +5,7 @@ import Button from '@mui/material/Button';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import html2pdf from 'html2pdf.js';
 import mammoth from 'mammoth';
-import AppBar from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
-import Toolbar from '@mui/material/Toolbar';
-import Typography from '@mui/material/Typography';
-import IconButton from '@mui/material/IconButton';
-import MenuIcon from '@mui/icons-material/Menu';
+
 
 function App() {
   const [selectedImage, setSelectedImage] = useState(localStorage.getItem('uploadedImage') || null);
@@ -230,47 +225,7 @@ function App() {
     });
   };
   
-  const downloadDOCX = () => {
-    const { displayedDetails } = userDetails;
-    const { firstName, lastName, jobTitle, email, phone, address, linkedinLink, facebookLink, instagramLink, summary, employment, education1, education2, language1, language2 } = displayedDetails;
   
-    const docxContent = `
-      <h2>${firstName} ${lastName}</h2>
-      <p><strong>Job Title:</strong> ${jobTitle}</p>
-      <p><strong>Email:</strong> ${email}</p>
-      <p><strong>Phone:</strong> ${phone}</p>
-      <p><strong>Address:</strong> ${address}</p>
-      <p><strong>LinkedIn:</strong> ${linkedinLink}</p>
-      <p><strong>Facebook:</strong> ${facebookLink}</p>
-      <p><strong>Instagram:</strong> ${instagramLink}</p>
-  
-      <h2>Professional Summary</h2>
-      <p>${summary}</p>
-  
-      <h2>Experience</h2>
-      <p>${employment}</p>
-  
-      <h2>Education</h2>
-      <p>${education1}</p>
-      <p>${education2}</p>
-  
-      <h2>Languages</h2>
-      <p>${language1}</p>
-      <p>${language2}</p>
-    `;
-  
-    mammoth.extractRawText({ value: docxContent })
-      .then((result) => {
-        const documentBlob = new Blob([result.value], { type: 'application/octet-stream' });
-        const link = document.createElement('a');
-        link.href = URL.createObjectURL(documentBlob);
-        link.download = 'resume.docx';
-        link.click();
-      })
-      .catch((error) => {
-        console.error('Error generating DOCX:', error);
-      });
-  };
   return (
     <div className='main_container'>
       <div className='left_container'>
@@ -503,7 +458,7 @@ function App() {
           <p>Aa</p>
           <p>+</p>
           <Button variant="contained" className='mui_btn' onClick={downloadPDF}>Download PDF</Button>
-          <Button variant="contained" className='mui_btn' onClick={downloadDOCX}>Download DOCX</Button>
+          {/* <Button variant="contained" className='mui_btn' onClick={downloadDOCX}>Download DOCX</Button> */}
         </div>
         <div className="display_container" id="cv-container">
          <div className='display1'>

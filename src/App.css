@@ -40,7 +40,7 @@
   align-items: center;
 }
 .resume_score{
-  display: inline-block;
+    display: inline-block;
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.3px;
@@ -494,12 +494,14 @@ input {
 /* right */
 .right_container{
   width: 100%;
+  height: fit-content;
   /* position: absolute; */
 }
 .display_container{
   width: 300px;
+  height: fit-content;
   display: flex;
-  padding: 40px 0px;
+  /* padding: 40px 0px; */
 }
 .display1{
   width: 100px;

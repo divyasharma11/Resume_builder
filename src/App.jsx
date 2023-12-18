@@ -486,7 +486,7 @@ function App() {
          }
          <h3 onClick={handleAddLanguage}>+ Add language</h3>
        </div>
-       <div style={{display:'flex',justifyContent:'space-evenly'}}>
+       <div className='done_btn'>
         <div>
         <Button variant='contained' className='mui_btn' onClick={handleSubmit}>Save</Button>
         </div>
